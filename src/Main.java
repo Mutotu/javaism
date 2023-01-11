@@ -1,4 +1,4 @@
-public class Main {
+public class Main extends Object{
     public static  void main(String[] args){
 //        Car car = new Car();
 //        car.setMake("Tesla");
@@ -122,16 +122,103 @@ public class Main {
 //        calculator = new Calculate(floor, carpet);
 //        System.out.println("total= " + calculator.getTotalCost());
 
-        ComplexNumber one = new ComplexNumber(1.0, 1.0);
-        ComplexNumber number = new ComplexNumber(2.5, -1.5);
-        one.add(1,1);
-        System.out.println("one.real= " + one.getReal());
-        System.out.println("one.imaginary= " + one.getImaginary());
-        one.subtract(number);
-        System.out.println("one.real= " + one.getReal());
-        System.out.println("one.imaginary= " + one.getImaginary());
-        number.subtract(one);
-        System.out.println("number.real= " + number.getReal());
-        System.out.println("number.imaginary= " + number.getImaginary());
+//        ComplexNumber one = new ComplexNumber(1.0, 1.0);
+//        ComplexNumber number = new ComplexNumber(2.5, -1.5);
+//        one.add(1,1);
+//        System.out.println("one.real= " + one.getReal());
+//        System.out.println("one.imaginary= " + one.getImaginary());
+//        one.subtract(number);
+//        System.out.println("one.real= " + one.getReal());
+//        System.out.println("one.imaginary= " + one.getImaginary());
+//        number.subtract(one);
+//        System.out.println("number.real= " + number.getReal());
+//        System.out.println("number.imaginary= " + number.getImaginary());
+        ////////////
+
+//    Animal animal = new Animal("Generic Animal", "huge", 400);
+//    doAnimalStuff(animal,"slow");
+//    Dog dog = new Dog();
+//    doAnimalStuff(dog, "fast");
+//    Dog wally = new Dog("Wally", 20);
+//    doAnimalStuff(wally, "fast");
+//
+//    Dog retriver = new Dog("Labrodar", 65, "Floppy", "Swimmer");
+//    doAnimalStuff(retriver, "slow");
+//    Dog wolf = new Dog("wolf", 40);
+//    doAnimalStuff(wolf, "slow");
+//
+//    Fish goldie = new Fish("Goldfish", 0.24, 2, 3) ;
+//    doAnimalStuff(goldie, "fast");
+
+        Studenting max = new Studenting("Max", 21);
+        System.out.println(max);
+        PrimarySchoolStudent  jimmy = new PrimarySchoolStudent("Jimmy", 9, "LOL");
+        System.out.println(jimmy);
+
+
+    }
+//    public static  void doAnimalStuff(Animal animal, String speed){
+//        animal.makeNoise();
+//        animal.move(speed);
+//        System.out.println(animal);
+//        System.out.println("_____");
+//    }
+
+}
+
+class Studenting{
+    private String name;
+    private int age;
+    Studenting(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+
+//    @Override
+//    public String toString() {
+//        return super.toString();
+//    }
+
+    @Override
+    public String toString() {
+        return name + " is " + age;
+//        return "Studenting{" +
+//                "name='" + name + '\'' +
+//                ", age=" + age +
+//                '}';
     }
 }
+
+
+
+
+class PrimarySchoolStudent extends Studenting{
+    private String parentName;
+    PrimarySchoolStudent(String  name, int age, String parentName){
+        super(name, age);
+        this.parentName = parentName;
+    }
+
+    @Override
+    public String toString() {
+        return parentName + "'s kid, " + super.toString();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
