@@ -1,5 +1,6 @@
 public class Main extends Object{
     public static  void main(String[] args){
+
 //        Car car = new Car();
 //        car.setMake("Tesla");
 //        car.setColor("Blue");
@@ -150,10 +151,10 @@ public class Main extends Object{
 //    Fish goldie = new Fish("Goldfish", 0.24, 2, 3) ;
 //    doAnimalStuff(goldie, "fast");
 
-        Studenting max = new Studenting("Max", 21);
-        System.out.println(max);
-        PrimarySchoolStudent  jimmy = new PrimarySchoolStudent("Jimmy", 9, "LOL");
-        System.out.println(jimmy);
+//        Studenting max = new Studenting("Max", 21);
+//        System.out.println(max);
+//        PrimarySchoolStudent  jimmy = new PrimarySchoolStudent("Jimmy", 9, "LOL");
+//        System.out.println(jimmy);
 
 
     }
@@ -163,6 +164,9 @@ public class Main extends Object{
 //        System.out.println(animal);
 //        System.out.println("_____");
 //    }
+
+
+
 
 }
 
